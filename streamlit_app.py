@@ -1,6 +1,63 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+st.set_page_config(
+    page_title="CNUE 수학 실습",
+    page_icon="📊",
+    layout="wide"
 )
+
+st.title("📊 CNUE 수학 실습 플랫폼")
+st.write("## 환영합니다! 🎉")
+st.write(
+    """
+    이 플랫폼은 수학과 데이터 과학을 위한 실습 환경입니다.
+    다양한 시각화 도구와 분석 기법을 학습하고 실습할 수 있습니다.
+    """
+)
+
+# 메인 기능 소개
+st.markdown("### 🚀 주요 기능")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    #### 📈 그래프 시각화
+    - **선 그래프**: 시간별 데이터 변화 추적
+    - **막대 그래프**: 범주형 데이터 비교
+    - **산점도**: 변수 간 상관관계 분석
+    - **히스토그램**: 데이터 분포 확인
+    """)
+    
+with col2:
+    st.markdown("""
+    #### 📊 고급 차트
+    - **원 그래프**: 비율 및 구성 요소 표현
+    - **박스 플롯**: 분포와 이상치 탐지
+    - **히트맵**: 2차원 데이터 패턴 시각화
+    - **바이올린 플롯**: 확률밀도 분포 표현
+    """)
+
+# 시작하기 버튼
+st.markdown("### 🎯 시작하기")
+st.markdown("""
+왼쪽 사이드바에서 **'그래프 시각화'** 페이지를 선택하여 다양한 차트 예시를 확인해보세요!
+
+각 차트 타입별로:
+- 실제 데이터를 사용한 예시
+- 상세한 설명과 해석
+- 통계적 정보 제공
+- 인터랙티브 차트 선택
+""")
+
+# 추가 정보
+st.markdown("---")
+st.markdown("### 📚 학습 자료")
+st.info("""
+💡 **팁**: 
+- 사이드바에서 다양한 페이지를 탐색해보세요
+- 각 차트의 코드와 설명을 통해 학습하세요
+- 실제 데이터 분석에 활용해보세요
+""")
+
+st.success("시작할 준비가 되었습니다! 왼쪽 사이드바에서 '그래프 시각화'를 선택해보세요. 🚀")
